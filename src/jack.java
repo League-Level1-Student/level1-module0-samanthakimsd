@@ -1,43 +1,46 @@
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.print.DocFlavor.URL;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class cutenessTV implements ActionListener {
+public class jack implements ActionListener {
 
 	public static void main(String[] args) {
-		new cutenessTV().createUI();
+		new jack().createUI();
 	}
 
 	JButton leftButton = new JButton();
 	JButton rightButton = new JButton();
-	JButton middleButton = new JButton();
+
+	Dimension BIG = new Dimension(400, 400);
+	Dimension SMALL = new Dimension(200, 200);
+
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 
-	private void createUI() {
+	void createUI() {
 
 		frame.add(panel);
 		frame.setVisible(true);
-		leftButton.setText("Ducks");
-		rightButton.setText("Frog");
-		middleButton.setText("Fluffy Unicorn");
+		leftButton.setText("surprise");
+		
+
 		leftButton.addActionListener(this);
 		rightButton.addActionListener(this);
-		middleButton.addActionListener(this);
 		panel.add(leftButton);
 		panel.add(rightButton);
-		panel.add(middleButton);
 		frame.pack();
-		frame.setTitle("Cuteness TV");
+		frame.setTitle("Demanding Buttons");
 	}
 
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
+	
+
 		
-	}}
-
-
+	}

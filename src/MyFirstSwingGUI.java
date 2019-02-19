@@ -15,9 +15,9 @@ import javax.swing.JPanel;
 public class MyFirstSwingGUI {
 	public static void main(String[] args) {
 		//1. Create and initialize an object of the JFrame class
-new JFrame();
+		JFrame frame = new JFrame();
 		//2. Set your JFrame object to be visible
-
+frame.setVisible(true);
 		//3. Run your program. Do you see your window? It's probably very small.
 		
 		//4. Set the default close operation to JFrame.EXIT_ON_CLOSE
