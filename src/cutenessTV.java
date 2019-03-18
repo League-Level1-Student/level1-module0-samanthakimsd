@@ -1,5 +1,6 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.net.URI;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -9,6 +10,26 @@ public class cutenessTV implements ActionListener {
 
 	public static void main(String[] args) {
 		new cutenessTV().createUI();
+	}
+	void showDucks() {
+	     playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
+	}
+
+	void showFrog() {
+	     playVideo("https://www.youtube.com/watch?v=cBkWhkAZ9ds");
+	}
+
+	void showFluffyUnicorns() {
+	     playVideo("https://www.youtube.com/watch?v=a-xWhG4UU_Y");
+	}
+
+	void playVideo(String videoID) {
+	     try {
+	          URI uri = new URI(videoID);
+	          java.awt.Desktop.getDesktop().browse(uri);
+	     } catch (Exception e) {
+	          e.printStackTrace();
+	     }
 	}
 
 	JButton leftButton = new JButton();
@@ -37,7 +58,15 @@ public class cutenessTV implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		
+		if (e.getSource()==leftButton) {
+			showDucks();
+		}
+		if (e.getSource()==rightButton) {
+			showFrog();
+		}
+		if (e.getSource()==middleButton) {
+			showF();
+		}
 	}}
 
 
