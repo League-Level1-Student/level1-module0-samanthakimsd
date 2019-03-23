@@ -52,7 +52,7 @@ public class cutenessTV implements ActionListener {
 		panel.add(rightButton);
 		panel.add(middleButton);
 		frame.pack();
-		frame.setTitle("Cuteness TV");
+		frame.setTitle("cuteness tv");
 	}
 
 	@Override
@@ -61,11 +61,11 @@ public class cutenessTV implements ActionListener {
 		if (e.getSource()==leftButton) {
 			showDucks();
 		}
-		if (e.getSource()==rightButton) {
+		if(e.getSource()==rightButton) {
 			showFrog();
 		}
-		if (e.getSource()==middleButton) {
-			showF();
+		if(e.getSource()==middleButton) {
+			showFluffyUnicorns();
 		}
 	}}
 

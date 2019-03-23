@@ -31,7 +31,7 @@ public class DrumKit implements MouseListener {
     	new JFrame();
    	 // 2. Make the frame visible and 
     //     set its default close operation to JFrame.EXIT_ON_CLOSE
-   	 JFrame.EXIT_ON_CLOSE
+    	  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
    	 // 3. Set the size of the frame
    	 
    	 // 4. Set the title of the frame

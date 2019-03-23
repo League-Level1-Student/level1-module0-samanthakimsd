@@ -56,10 +56,8 @@ public class jack implements ActionListener {
 		private void createUI() {
 
 			
-			middleButton.setText("surprise");
-			
+			middleButton.setText("click for surprise ;)");
 			middleButton.addActionListener(this);
-			
 			panel.add(middleButton);
 			frame.add(panel);
 			frame.pack();
