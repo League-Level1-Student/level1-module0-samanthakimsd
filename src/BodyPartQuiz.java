@@ -35,7 +35,7 @@ int score = 0;
 		// 2. Set the size of the window in the initializeGui() method below
 initializeGui();
 		// 4. Ask the user who this person is and store their answer
-	for (int i = 0; i < 4; i++) {
+
 		
 	
 String guess= JOptionPane.showInputDialog("who is this(first name only)?");
@@ -56,10 +56,41 @@ else {
 	    	// 8. Show them their current score
 JOptionPane.showMessageDialog(null, "your score is "+ score);
 		// 9. .... repeat for all your images.....
+String guess1= JOptionPane.showInputDialog("who is this(first name only)?");
+if(guess1.equals("leonardo")) {
+JOptionPane.showMessageDialog(null, "nice job");
+score += 1;
+}
+else {
+JOptionPane.showMessageDialog(null, "ur not the brightest... it was leonardo, obviously");
 	}
-
-
+showNextImage();
+JOptionPane.showMessageDialog(null, "your score is "+ score);
+	
+	String guess2= JOptionPane.showInputDialog("who is this(first name only)?");
+	if(guess2.equals("morgan")) {
+	JOptionPane.showMessageDialog(null, "nice job");
+	score += 1;
 	}
+	else {
+	JOptionPane.showMessageDialog(null, "ur not the brightest... it was morgan, obviously");
+		}
+	showNextImage();
+	JOptionPane.showMessageDialog(null, "your score is "+ score);
+		
+	String guess3= JOptionPane.showInputDialog("who is this(first name only)?");
+	if(guess3.equals("jack")) {
+	JOptionPane.showMessageDialog(null, "nice job");
+	score += 1;
+	}
+	else {
+	JOptionPane.showMessageDialog(null, "ur not the brightest... it was jack, obviously");
+		}
+	
+	JOptionPane.showMessageDialog(null, "your final score is "+ score);
+	}
+		
+
 
 	public void showNextImage() {
 		panel.removeAll();

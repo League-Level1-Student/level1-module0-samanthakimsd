@@ -12,7 +12,7 @@ public class cutenessTV implements ActionListener {
 		new cutenessTV().createUI();
 	}
 	void showDucks() {
-	     playVideo("https://www.youtube.com/watch?v=MtN1YnoL46Q");
+	     playVideo("https://www.youtube.com/watch?v=e3PdcKcUvDY");
 	}
 
 	void showFrog() {
@@ -44,7 +44,7 @@ public class cutenessTV implements ActionListener {
 		frame.setVisible(true);
 		leftButton.setText("Ducks");
 		rightButton.setText("Frog");
-		middleButton.setText("Fluffy Unicorn");
+	    middleButton.setText("Fluffy Unicorns");
 		leftButton.addActionListener(this);
 		rightButton.addActionListener(this);
 		middleButton.addActionListener(this);
@@ -52,7 +52,8 @@ public class cutenessTV implements ActionListener {
 		panel.add(rightButton);
 		panel.add(middleButton);
 		frame.pack();
-		frame.setTitle("cuteness tv");
+		frame.setTitle("choose a video");
+		
 	}
 
 	@Override
